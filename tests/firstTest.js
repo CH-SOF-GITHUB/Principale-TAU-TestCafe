@@ -1,10 +1,12 @@
 import {test, Selector} from "testcafe";
 import XpathSelector from "../utils/xpath-selector";
 
+const {userVariables} = require('testcafe');
+
 fixture('tau first fixture')
     .meta("fixtureID", "f-0001")
     .meta({author: "Chaker Ben Said", creationDate: "20/05/2025"})
-    .page("https://devexpress.github.io/testcafe/example/");
+    .page(String(userVariables.url));
 
 // Selector for the elements
 const developerName = Selector("#developer-name");
@@ -41,3 +43,23 @@ test.meta('testID', 't-0002')
             .click(interfaceSelectOption.withText('JavaScript API'))
             .click(ITriedCheckbox)
     })
+
+test.meta('testID', 't-0003')
+    .meta('env', 'production')
+    .meta('tag', '@Hover')
+    ('interact with DOM elements', async t => {
+        await t
+            .hover(XpathSelector('//*[@id="main-form"]/div/header/h1'))
+            .hover('#populate')
+        console.log("hovered on the title and populate button");
+    });
+
+test.meta('testID', 't-0004')
+    .meta('env', 'production')
+    .meta('testName', 'Interact with DOM elements')
+    ('navigate to specific URL', async t => {
+        await t
+            .navigateTo("https://testcafe.io/documentation/402635/guides/overview/getting-started")
+            .wait(30000)
+        console.log("navigated to testcafe documentation");
+    });

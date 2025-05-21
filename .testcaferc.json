@@ -1,0 +1,22 @@
+{
+  "baseUrl": "https://devexpress.github.io/testcafe/example/",
+  "userVariables": {
+    "url": "https://devexpress.github.io/testcafe/example/",
+    "url_2": "https://the-internet.herokuapp.com/iframe",
+    "url_3": "https://the-internet.herokuapp.com/upload"
+  },
+  "browsers": [
+    "chrome",
+    "ie",
+    "firefox"
+  ],
+  "src": [
+    "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\tests/**/*.js"
+  ],
+  "filter": {
+    "testMeta": {
+      "testID": "t-0007"
+    }
+  },
+  "skipJsErrors": true
+}
