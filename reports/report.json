@@ -1,0 +1,33 @@
+{
+  "startTime": "2025-05-21T16:47:34.854Z",
+  "endTime": "2025-05-21T16:47:48.425Z",
+  "userAgents": [
+    "Firefox 138.0 / Windows 11"
+  ],
+  "passed": 1,
+  "total": 1,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Working with client side function",
+      "path": "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\tests\\secondTest.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "check current Title of Login Page",
+          "meta": {
+            "testID": "t-0010"
+          },
+          "errs": [],
+          "durationMs": 12399,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "The \"src\" and \"browsers\" options from the configuration file will be ignored."
+  ]
+}

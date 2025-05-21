@@ -26,7 +26,9 @@ test.page(String(userVariables.url_3))
     .meta("testID", "t-0007")
     ("check upload file", async t => {
         await t
-            .setFilesToUpload(file_upload(), "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\uploads\\text-file-1.txt")
+            .setFilesToUpload(file_upload, "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\uploads\\text-file-1.txt")
+            .clearUpload(file_upload)
+            .setFilesToUpload(file_upload, "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\uploads\\text-file-2.txt")
             .click(upload_button)
-            .expect(uploaded_files.innerText).eql("text-file-1.txt")
+            .expect(uploaded_files.innerText).eql("text-file-2.txt")
     });

@@ -18,6 +18,8 @@ const interfaceSelect = Selector('#preferred-interface');
 const interfaceSelectOption = interfaceSelect.find('option');
 const ITriedCheckbox = Selector("#tried-test-cafe");
 
+//const headerH1 = xpath('//*[@id="main-form"]/div/header/h1');
+
 test
     .meta('testID', 't-0001')
     .meta('env', 'production')

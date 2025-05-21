@@ -3,11 +3,11 @@
   "userVariables": {
     "url": "https://devexpress.github.io/testcafe/example/",
     "url_2": "https://the-internet.herokuapp.com/iframe",
-    "url_3": "https://the-internet.herokuapp.com/upload"
+    "url_3": "https://the-internet.herokuapp.com/upload",
+    "url_4": "https://demoqa.com/login"
   },
   "browsers": [
     "chrome",
-    "ie",
     "firefox"
   ],
   "src": [
@@ -15,8 +15,28 @@
   ],
   "filter": {
     "testMeta": {
-      "testID": "t-0007"
+      "testID": "t-0010"
     }
   },
-  "skipJsErrors": true
+  "selectorTimeout": 20000,
+  "reporter": [
+    {
+      "name": "spec"
+    },
+    {
+      "name": "json",
+      "output": "reports/report.json"
+    }
+  ],
+  "debugMode": false,
+  "screenshots": {
+    "path": "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\screenshots",
+    "takeOnFails": true,
+    "fullPage": true,
+    "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png",
+    "pathPatternOnFails": "${DATE}_${TIME}/failedTests/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png",
+    "thumbnails": false
+  },
+  "skipJsErrors": true,
+  "speed": 0.1
 }

@@ -14,6 +14,8 @@
   "license": "ISC",
   "description": "use E2E test type and use TestCafe to simulate common user scenarios in major desktop browsers, cloud browsers, and on mobile devices.",
   "dependencies": {
-    "testcafe": "^3.7.2"
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "testcafe": "^3.7.2",
+    "xpath": "^0.0.34"
   }
 }
