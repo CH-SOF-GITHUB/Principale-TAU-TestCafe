@@ -1,7 +1,8 @@
 {
-  "startTime": "2025-05-21T16:47:34.854Z",
-  "endTime": "2025-05-21T16:47:48.425Z",
+  "startTime": "2025-05-22T17:13:43.679Z",
+  "endTime": "2025-05-22T17:14:36.002Z",
   "userAgents": [
+    "Chrome 136.0.0.0 / Windows 11",
     "Firefox 138.0 / Windows 11"
   ],
   "passed": 1,
@@ -9,25 +10,29 @@
   "skipped": 0,
   "fixtures": [
     {
-      "name": "Working with client side function",
-      "path": "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\tests\\secondTest.js",
-      "meta": {},
+      "name": "Fixture Customer",
+      "path": "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\tests\\customer.nopcommerce.test.js",
+      "meta": {
+        "fixtureID": "fmagento2-0003",
+        "author": "Chaker Ben Said",
+        "creationDate": "22/05/2025"
+      },
       "tests": [
         {
-          "name": "check current Title of Login Page",
+          "name": "check my orders in my account",
           "meta": {
-            "testID": "t-0010"
+            "testID": "tmagento2-007"
           },
           "errs": [],
-          "durationMs": 12399,
+          "durationMs": 51332,
           "unstable": false,
-          "screenshotPath": null,
+          "screenshotPath": "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\screenshots\\FireBearStudioDemo\\2025-05-22_18-13-43\\test-1",
           "skipped": false
         }
       ]
     }
   ],
   "warnings": [
-    "The \"src\" and \"browsers\" options from the configuration file will be ignored."
+    "TestCafe does not support full-page screenshots in chrome."
   ]
 }

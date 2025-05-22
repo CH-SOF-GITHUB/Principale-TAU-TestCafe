@@ -15,10 +15,18 @@
   ],
   "filter": {
     "testMeta": {
-      "testID": "t-0010"
+      "testID": "tmagento2-007"
     }
   },
-  "selectorTimeout": 20000,
+  "selectorTimeout": 5000,
+  "quarantineMode": {
+    "successThreshold": 1,
+    "attemptLimit": 3
+  },
+  "pageLoadTimeout": 1000,
+  "assertionTimeout": 10000,
+  "pageRequestTimeout": 8000,
+  "ajaxRequestTimeout": 40000,
   "reporter": [
     {
       "name": "spec"
@@ -30,7 +38,7 @@
   ],
   "debugMode": false,
   "screenshots": {
-    "path": "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\screenshots",
+    "path": "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\screenshots\\FireBearStudioDemo",
     "takeOnFails": true,
     "fullPage": true,
     "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png",
