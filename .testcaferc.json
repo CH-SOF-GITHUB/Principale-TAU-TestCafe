@@ -14,18 +14,18 @@
     "C:\\Users\\chaker\\Desktop\\qase\\TAU-Testcafe\\tests/**/*.js"
   ],
   "filter": {
-    "testMeta": {
-      "testID": "tmagento2-007"
+    "fixtureMeta": {
+      "fixtureID": "fmagento2-0006"
     }
   },
-  "selectorTimeout": 5000,
+  "selectorTimeout": 10000,
   "quarantineMode": {
     "successThreshold": 1,
-    "attemptLimit": 3
+    "attemptLimit": 2
   },
-  "pageLoadTimeout": 1000,
+  "pageLoadTimeout": 0,
   "assertionTimeout": 10000,
-  "pageRequestTimeout": 8000,
+  "pageRequestTimeout": 40000,
   "ajaxRequestTimeout": 40000,
   "reporter": [
     {

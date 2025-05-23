@@ -26,7 +26,7 @@ fixture("Fixture Customer")
 
 test
     .meta('testID', 'tmagento2-007')
-    ("check my orders in my account", async t => {
+    ("check empty my-orders in my account", async t => {
         await t.click(home_page.loginLink_locator);
         await login_page.SubmitLoginEmail("bchaker28@yahoo.com");
         await login_page.SubmitLoginPassword("Admin12345!");
