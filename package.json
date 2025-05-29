@@ -15,7 +15,11 @@
   "description": "use E2E test type and use TestCafe to simulate common user scenarios in major desktop browsers, cloud browsers, and on mobile devices.",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "csv-parser": "^3.2.0",
+    "fs": "^0.0.1-security",
+    "nanoid": "^5.1.5",
     "testcafe": "^3.7.2",
+    "testcafe-reporter-testomatio": "^0.1.1",
     "xpath": "^0.0.34"
   }
 }

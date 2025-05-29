@@ -25,7 +25,7 @@ fixture("Fixture sample display cart 1")
 let product = "Aim Analog Watch";
 
 test
-    .meta('testID', 'tmagento2-009')
+    .meta('testID', 'tmagento2-013')
     ("test 1: display product in cart", async t => {
         await product_page.search_product(product);
         await product_page.click_product_link(product);

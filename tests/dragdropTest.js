@@ -28,13 +28,3 @@ test
             .takeElementScreenshot(slider)
             .takeScreenshot()
     });
-
-// All tests in this fixture are skipped
-fixture`Fixture 2`;
-
-test('Fixture 2 -- Test 1', async t => {
-    console.log("Fixture 2 -- Test 1");
-});
-test('Fixture 2 -- Test 2', async t => {
-    console.log("Fixture 2 -- Test 2");
-});

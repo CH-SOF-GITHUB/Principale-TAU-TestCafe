@@ -1,4 +1,4 @@
-import {Selector} from 'testcafe';
+import testcafe, {Selector, t} from 'testcafe';
 
 class Page {
     constructor() {
@@ -15,58 +15,60 @@ class Page {
         // this.myAccountLink_locator = Selector("a").withText("My account");
         // this.logoutLink_locator = Selector("a").withText("Log out");
         // this.search_button_locator = Selector(".search-box-button");
-    }
 
-    // Methods which perform operations on these web elements
-    async search_for_product(t, product_text) {
-        await t
-            .typeText(this.productSearch_input_locator, product_text)
-            .pressKey('enter')
-        console.log(`\nStep : search for product ${product_text}`);
-    }
-    /*
-    async click_register_link(t) {
-        await t
-            .click(this.registerLink_locator);
-        console.log(`\nStep : click on register link`);
-    }
-    */
-    /*
-    async click_login_link(t) {
-        await t
-            .click(this.loginLink_locator);
-        console.log(`\nStep : click on login link`);
-    }
-    */
-    /*
-    async click_cart_link(t) {
-        await t.click(this.cartLink_locator);
-        console.log(`\nStep : click on cart link`);
-    }
-    */
-    /*
-    async click_my_account_link() {
-        await t.click(this.myAccountLink_locator);
-        console.log(`\nStep : click on my account link`);
-    }
+        // Methods which perform operations on these web elements
+        this.t = testcafe.t;
 
-    async click_logout_link() {
-        await t.click(this.logoutLink_locator);
-        console.log(`\nStep : click on logout link`);
-    }
-     */
+        this.search_for_product = async (product_text) => {
+            await t
+                .typeText(this.productSearch_input_locator, product_text)
+                .pressKey('enter')
+            console.log(`\nStep : search for product ${product_text}`);
+        }
+        /*
+        async click_register_link(t) {
+            await t
+                .click(this.registerLink_locator);
+            console.log(`\nStep : click on register link`);
+        }
+        */
+        /*
+        async click_login_link(t) {
+            await t
+                .click(this.loginLink_locator);
+            console.log(`\nStep : click on login link`);
+        }
+        */
+        /*
+        async click_cart_link(t) {
+            await t.click(this.cartLink_locator);
+            console.log(`\nStep : click on cart link`);
+        }
+        */
+        /*
+        async click_my_account_link() {
+            await t.click(this.myAccountLink_locator);
+            console.log(`\nStep : click on my account link`);
+        }
 
-    async select_currency(currency) {
-        await t
-            .click(this.customerCurrency_locator)
-            .click(this.customerCurrency_option.withText(currency));
-        console.log(`\nStep : select currency ${currency}`);
-    }
+        async click_logout_link() {
+            await t.click(this.logoutLink_locator);
+            console.log(`\nStep : click on logout link`);
+        }
+         */
 
-    // navbar links
-    async click_on_navbar_category(category) {
-        await t.click(Selector('a').withText(category));
-        console.log(`\nStep : click on navbar the category=='${category}'`);
+        //this.select_currency = async (currency) => {
+        //    await t
+        //        .click(this.customerCurrency_locator)
+        //    .click(this.customerCurrency_option.withText(currency));
+        //    console.log(`\nStep : select currency ${currency}`);
+        //}
+
+        // navbar links
+        //async click_on_navbar_category(category) {
+        //    await t.click(Selector('a').withText(category));
+        //    console.log(`\nStep : click on navbar the category=='${category}'`);
+        //}
     }
 }
 
